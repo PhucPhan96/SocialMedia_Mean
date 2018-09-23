@@ -10,7 +10,7 @@ import { User } from './../models/user.class';
 export class LoginService {
   // public username : Object;
   public User : User;
-  public API : string = 'http://192.168.1.9:3200/';
+  public API : string = 'http://localhost:3200/';
 
   constructor(public http : HttpClient) { }
 
