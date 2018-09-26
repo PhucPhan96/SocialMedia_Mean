@@ -1,7 +1,7 @@
 <body>
   <div class="pn-login">
     <div class="container">
-      <div class="row">
+      <div class="row login">
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-left">
           <img src="./../../../assets/images/logo-luxury.png" alt="">
         </div>
@@ -11,8 +11,8 @@
             <table cellspacing="0" role="presentation">
               <tbody>
                 <tr>
-                  <td ><label class="email" for="email">Email</label></td>
-                  <td ><label class="password" for="pass">Mật khẩu</label></td>
+                  <td><label class="email" for="email">Email</label></td>
+                  <td><label class="password" for="pass">Mật khẩu</label></td>
                 </tr>
                 <tr>
                   <td><input type="email" class="inputtext" name="email" id="email" tabindex="1" data-testid="royal_email"></td>
@@ -22,13 +22,86 @@
                 <tr>
                   <td class="login_form_label_field"></td>
                   <td class="login_form_label_field">
-                    <div class="forget"><a href="https://www.facebook.com/recover/initiate?lwv=110&amp;ars=royal_blue_bar">Quên tài
+                    <div class="forget"><a href="https://www.facebook.com/recover/initiate?lwv=110&amp;ars=royal_blue_bar">Quên
+                        tài
                         khoản?</a></div>
                   </td>
                 </tr>
               </tbody>
             </table>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+          <img src="./../../../assets/images/volunteer.jpg" alt="">
+          <h3>Hãy cùng nhau chung tay, chia sẻ <br>giúp đỡ những hoàn cảnh khó khăn hiện nay.</h3>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+          <div class="col-md-11 order-md-1 form_signup">
+            <h3 class="mb-4">Đăng kí</h3>
+            <form class="needs-validation" novalidate="">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName">Họ</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="Họ" value="" required="">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName">Tên</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Tên" value="" required="">
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="gender">Giới tính</label>
+                  <select class="custom-select d-block w-100" id="gender" required="">
+                    <option value="">Chọn...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="birthday">Ngày sinh</label>
+                  <input type="date" class="form-control" id="birthday">
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="address">Địa chỉ</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+              </div>
+
+              <div class="mb-3">
+                <label for="phone">Điện thoại</label>
+                <input type="number" class="form-control" id="phone" placeholder="0123456789" required="">
+              </div>
+
+              <div class="mb-3">
+                <label for="password">Mật khẩu</label>
+                <input type="password" class="form-control" id="password" placeholder="********" required="">
+              </div>
+
+              <div class="mb-3">
+                <label for="repassword">Xác nhận mật khẩu</label>
+                <input type="password" class="form-control" id="repassword" placeholder="********" required="">
+              </div>
+              
+              <button class="btn btn-lg btn-block btn-signup" type="submit">Đăng kí</button>
+            </form>
+          </div>
+
         </div>
       </div>
     </div>
