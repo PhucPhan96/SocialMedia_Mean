@@ -1,30 +1,36 @@
-<!doctype html>
-<html lang="en">
+<body>
+  <div class="pn-login">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-left">
+          <img src="./../../../assets/images/logo-luxury.png" alt="">
+        </div>
 
-<head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-</head>
-
-<body class="text-center">
-  <form class="form-signin">
-    <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-    <label class="sr-only">Username</label>
-    <input type="text" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="" [ngModelOptions]="{standalone: true}" [(ngModel)]="username">
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" [ngModelOptions]="{standalone: true}" [(ngModel)]="password">
-    <!-- <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div> -->
-    <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="checkLogin()">Sign in</button>
-    <p class="mt-5 mb-3 text-status">{{status}}</p>
-  
-  </form>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-right">
+          <form id="login_form">
+            <table cellspacing="0" role="presentation">
+              <tbody>
+                <tr>
+                  <td ><label class="email" for="email">Email</label></td>
+                  <td ><label class="password" for="pass">Mật khẩu</label></td>
+                </tr>
+                <tr>
+                  <td><input type="email" class="inputtext" name="email" id="email" tabindex="1" data-testid="royal_email"></td>
+                  <td><input type="password" class="inputtext" name="pass" id="pass" tabindex="2" data-testid="royal_pass"></td>
+                  <button class="btn-login">Đăng nhập</button>
+                </tr>
+                <tr>
+                  <td class="login_form_label_field"></td>
+                  <td class="login_form_label_field">
+                    <div class="forget"><a href="https://www.facebook.com/recover/initiate?lwv=110&amp;ars=royal_blue_bar">Quên tài
+                        khoản?</a></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-
-</html>
