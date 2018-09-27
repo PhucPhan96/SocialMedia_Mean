@@ -1,0 +1,16 @@
+.navbar{
+    background-color: #0c1732;
+}
+
+.form-inline .form-control{
+    width: 350px;
+}
+#navbarCollapse{
+    position: relative;
+}
+
+.topnav-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}

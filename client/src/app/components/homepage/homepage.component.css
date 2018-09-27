@@ -1,0 +1,46 @@
+.row{
+    margin-top: 110px;
+}
+
+.card{
+    border: 0px solid rgba(0,0,0,.125)
+}
+
+.profile-card{
+    background: linear-gradient(to bottom, rgba(39,170,225,.8), rgba(28,117,188,.8)) no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 110px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #fff;
+    margin-bottom: 40px;
+    /* margin-top: 80px; */
+  }
+  
+  .profile-card img.profile-photo{
+    border: 7px solid #fff;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    top: -30px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+  
+  .profile-card h5 a{
+    font-size: 25px;
+  }
+  
+  .profile-card a{
+    font-size: 12px;
+  }
+
+  .panel-right{
+      float: right;
+  }
+
+  .card-newfeeds{
+    border: 1px solid rgba(0,0,0,.125)
+  }
