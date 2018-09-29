@@ -3,7 +3,7 @@
 }
 
 .form-inline .form-control{
-    width: 350px;
+    width: 400px;
 }
 #navbarCollapse{
     position: relative;
@@ -13,4 +13,22 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.navbar-brand{
+    margin-right: -10em;
+}
+
+/* dropdown */
+.dropdown-menu{
+    margin-top: 10px;
+    background-color: #0c1732;
+}
+
+.dropdown-menu li{
+    padding: 10px;
+}
+
+.dropdown-menu li a{
+    color: white;
 }
