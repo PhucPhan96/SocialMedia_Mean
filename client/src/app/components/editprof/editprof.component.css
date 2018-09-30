@@ -44,6 +44,11 @@
     position: absolute;
     bottom: 25px;
   }
+
+  .timeline-cover .timeline-nav-bar .btn-addfriend{
+    float: right;
+    margin-right: 30px;
+  }
   
   .timeline-cover .timeline-nav-bar .profile-info{
     position: absolute;
@@ -144,6 +149,10 @@
   
   .timeline-cover .navbar-mobile .mobile-menu ul li a.active{
     color: #27aae1;
+  }
+
+  .edit-profile-container .block-title i{
+    margin-right: 15px;
   }
   
   

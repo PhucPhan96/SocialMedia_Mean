@@ -7,13 +7,82 @@
         <div class="profile-card">
           <img src="./../../../assets/images/fuk.png" alt="user" class="profile-photo">
           <h5><a href="timeline.html" class="text-white">Phan Hồng Phúc</a></h5>
-          <a href="#" class="text-white"><i class="fa fa-rss" aria-hidden="true"></i> 1,299 followers</a>
+          <!-- <a href="#" class="text-white"><i class="fa fa-rss" aria-hidden="true"></i> 1,299 followers</a> -->
+          <ul class="nav justify-content-first">
+            <li class="nav-item">
+              <i class="fa fa-rss" aria-hidden="true">&nbsp;1,5k</i>
+            </li>
+            <li class="nav-item">
+              <i class="fa fa-user-plus" aria-hidden="true">&nbsp;2,3k</i>
+            </li>
+            <li class="nav-item">
+              <i class="fa fa-pencil-square-o" aria-hidden="true">&nbsp;34</i>
+            </li>
+          </ul>
         </div>
         <div class="card-body option-left">
           <ul class="list-group">
-            <li class="list-group-item">Active item</li>
-            <li class="list-group-item">Item</li>
-            <li class="list-group-item">Disabled item</li>
+
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <i class="fa fa-home" aria-hidden="true" style="color: #0c1732"></i>
+                </div>
+
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                  <p>Nhà của tôi</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- <li class="list-group-item">Nhà của tôi</li> -->
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <i class="fa fa-user" aria-hidden="true" style="color: #8dc63f"></i>
+                </div>
+
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                  <p>Bạn bè</p>
+                </div>
+              </div>
+
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <i class="fa fa-users" aria-hidden="true" style="color: #662d91"></i>
+                </div>
+
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                  <p>Nhóm</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                  <i class="fa fa-weixin" aria-hidden="true" style="color: #f7941e"></i>
+                </div>
+
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                  <p>Tin nhắn</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="row">
+                  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <i class="fa fa-bookmark" aria-hidden="true" style="color: #1c75bc"></i>
+                  </div>
+  
+                  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                    <p>Sự kiện</p>
+                  </div>
+                </div>
+              </li>
           </ul>
         </div>
       </div>
@@ -28,28 +97,81 @@
         <div class="panel-body">
           <div class="form-group">
             <img src="./../../../assets/images/fuk.png" alt="" class="profile-photo-md">
-            <textarea name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control" placeholder="Write what you wish" wrap="soft"></textarea>
+            <textarea name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control" placeholder="Write what you wish"
+              wrap="soft"></textarea>
           </div>
         </div>
-        <div class="panel-footer">
-          <button class="btn btn-primary pull-right">Chia sẻ</button>
+        <div class="panel-footer postcontrol">
+          <i class="fa fa-picture-o" aria-hidden="true"></i>
+          <i class="fa fa fa-camera" aria-hidden="true"></i>
+          <button class="btn pull-right">Chia sẻ</button>
         </div>
       </div>
 
       <div class="card text-left card-newfeeds">
-        <img class="card-img-top" src="holder.js/100px180/" alt="">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">Body</p>
+        <div class="post-content">
+          <img src="./../../../assets/images/banner.jpg" alt="post-image" class="img-responsive post-image">
+          <div class="post-container">
+            <img src="./../../../assets/images/fuk.png" alt="user" class="profile-photo-md pull-left">
+            <div class="post-detail">
+              <div class="user-info">
+                <h5><a href="timeline.html" class="profile-link">Phan Hồng Phúc</a></h5>
+                <p class="text-muted">Published a photo about 3 mins ago</p>
+              </div>
+              <div class="reaction">
+                <a class="btn text-green"><i class="fa fa-thumbs-up"></i> 13</a>
+                <a class="btn text-red"><i class="fa fa-thumbs-down"></i> 0</a>
+              </div>
+              <div class="line-divider"></div>
+              <div class="post-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum. <i class="em em-anguished"></i> <i class="em em-anguished"></i>
+                  <i class="em em-anguished"></i></p>
+              </div>
+              <div class="line-divider"></div>
+              <div class="post-comment">
+                <img src="./../../../assets/images/fuk.png" alt="" class="profile-photo-sm">
+                <p><a href="timeline.html" class="profile-link">Diana </a><i class="em em-laughing"></i> Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+              </div>
+              <div class="post-comment">
+                <img src="./../../../assets/images/fuk.png" alt="" class="profile-photo-sm">
+                <p><a href="timeline.html" class="profile-link">John</a> Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud </p>
+              </div>
+              <div class="post-comment">
+                <img src="./../../../assets/images/fuk.png" alt="" class="profile-photo-sm">
+                <input type="text" class="form-control" placeholder="Post a comment">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
       <div class="panel panel-default panel-right">
-        <div class="panel-body">
-          Basic panel example
+        <div class="title">
+          <h4>Sắp diễn ra</h4>
         </div>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <h5>Tên sự kiện</h5>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <i class="fa fa-clock-o" aria-hidden="true" style="color: rgb(226, 2, 2)">&nbsp; 7:30 &nbsp; 25-10-2018</i>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <i class="fa fa-location-arrow" aria-hidden="true" style="color: #8dc63f">&nbsp; Củ Chi</i>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
 
