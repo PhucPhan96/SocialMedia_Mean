@@ -9,6 +9,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { HeaderComponent } from './components/header/header.component';
 import { EditprofComponent } from './components/editprof/editprof.component';
 import { ChatComponent } from './components/chat/chat.component';
+import { CreateEventComponent } from './components/create-event/create-event.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ChatComponent } from './components/chat/chat.component';
     HomepageComponent,
     HeaderComponent,
     EditprofComponent,
-    ChatComponent
+    ChatComponent,
+    CreateEventComponent
   ],
   imports: [
     BrowserModule,
