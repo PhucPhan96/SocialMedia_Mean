@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { EditprofComponent } from './components/editprof/editprof.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { CreateEventComponent } from './components/create-event/create-event.component';
+import { FriendlistComponent } from './components/friendlist/friendlist.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CreateEventComponent } from './components/create-event/create-event.com
     HeaderComponent,
     EditprofComponent,
     ChatComponent,
-    CreateEventComponent
+    CreateEventComponent,
+    FriendlistComponent
   ],
   imports: [
     BrowserModule,
