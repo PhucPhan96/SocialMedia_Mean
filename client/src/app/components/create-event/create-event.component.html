@@ -1,182 +1,70 @@
-<div class="container">
+<div class="row">
+  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 create-body">
 
-  <div class="row main">
+    <form action="" method="POST" role="form">
+      <legend><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Tạo sự kiện</legend>
 
-    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-      <div class="card text-left">
-        <div class="profile-card">
-          <img src="./../../../assets/images/fuk.png" alt="user" class="profile-photo">
-          <h5><a href="timeline.html" class="text-white">Phan Hồng Phúc</a></h5>
-          <!-- <a href="#" class="text-white"><i class="fa fa-rss" aria-hidden="true"></i> 1,299 followers</a> -->
-          <ul class="nav justify-content-first">
-            <li class="nav-item">
-              <i class="fa fa-rss" aria-hidden="true">&nbsp;1,5k</i>
-            </li>
-            <li class="nav-item">
-              <i class="fa fa-user-plus" aria-hidden="true">&nbsp;2,3k</i>
-            </li>
-            <li class="nav-item">
-              <i class="fa fa-pencil-square-o" aria-hidden="true">&nbsp;34</i>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body option-left">
-          <ul class="list-group">
-
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                  <i class="fa fa-home" aria-hidden="true" style="color: #0c1732"></i>
-                </div>
-
-                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                  <p>Nhà của tôi</p>
-                </div>
-              </div>
-            </li>
-
-            <!-- <li class="list-group-item">Nhà của tôi</li> -->
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                  <i class="fa fa-user" aria-hidden="true" style="color: #8dc63f"></i>
-                </div>
-
-                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                  <p>Bạn bè</p>
-                </div>
-              </div>
-
-            </li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                  <i class="fa fa-users" aria-hidden="true" style="color: #662d91"></i>
-                </div>
-
-                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                  <p>Nhóm</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                  <i class="fa fa-weixin" aria-hidden="true" style="color: #f7941e"></i>
-                </div>
-
-                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                  <p>Tin nhắn</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                  <i class="fa fa-bookmark" aria-hidden="true" style="color: #1c75bc"></i>
-                </div>
-
-                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                  <p>Tạo sự kiện</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div class="form-group">
+        <label for="title">Tiêu đề</label>
+        <input type="text" class="form-control" id="title">
       </div>
-    </div>
 
-    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 create-body">
+      <div class="form-group">
+        <label for="discription">Miêu tả</label>
+        <textarea type="text" class="form-control" id="discription"></textarea>
+      </div>
 
-      <form action="" method="POST" role="form">
-        <legend><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Tạo sự kiện</legend>
-
-        <div class="form-group">
-          <label for="title">Tiêu đề</label>
-          <input type="text" class="form-control" id="title">
-        </div>
-
-        <div class="form-group">
-          <label for="discription">Miêu tả</label>
-          <textarea type="text" class="form-control" id="discription"></textarea>
-        </div>
-
-        <div class="form-group">
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="startday">Ngày bắt đầu</label>
-              <input type="date" class="form-control" id="startday">
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="endday">Ngày kết thúc</label>
-              <input type="date" class="form-control" id="endday">
-            </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="startday">Ngày bắt đầu</label>
+            <input type="date" class="form-control" id="startday">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="endday">Ngày kết thúc</label>
+            <input type="date" class="form-control" id="endday">
           </div>
         </div>
-        <div class="form-group">
-          <div class="row">
-            <div class="col-md-3 mb-3">
-              <label for="numvol">Số lượng</label>
-              <input type="number" class="form-control" id="numvol">
-            </div>
-            <div class="col-md-9 mb-3">
-              <label for="address">Địa chỉ</label>
-              <input type="text" class="form-control" id="address">
-            </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="numvol">Số lượng</label>
+            <input type="number" class="form-control" id="numvol">
+          </div>
+          <div class="col-md-9 mb-3">
+            <label for="address">Địa chỉ</label>
+            <input type="text" class="form-control" id="address">
           </div>
         </div>
-        <div class="form-group">
-          <h5>Nội dung</h5>
-          <p id="helpId" class="text-muted">Hãy thêm các nhiệm vụ, mục tiêu, và yêu cầu của sự kiện. Để tình nguyện
-            viên có thể nắm bắt kĩ hơn về sự kiện.</p>
-        </div>
-        <div class="form-group">
-          <label for="tasks">Nhiệm vụ</label>
-          <textarea type="text" class="form-control" id="tasks"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="objective">Mục tiêu</label>
-          <textarea type="text" class="form-control" id="objective"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="requi">Yêu cầu</label>
-          <textarea type="text" class="form-control" id="requi"></textarea>
-        </div>
-
-        <div class="form-group">
-          <label for="file">Đính kèm</label>
-          <input type="file" class="form-control-file" name="" id="file" accept="image/*" aria-describedby="fileHelpId">
-        </div>
-
-        <div class="form-group">
-          <button type="submit" class="btn btn-primary">Tạo</button>
-        </div>
-      </form>
-
-    </div>
-    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-      <div class="panel panel-default panel-right">
-        <div class="title">
-          <h4>Sắp diễn ra</h4>
-        </div>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <h5>Tên sự kiện</h5>
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <i class="fa fa-clock-o" aria-hidden="true" style="color: rgb(226, 2, 2)">&nbsp; 7:30 &nbsp; 25-10-2018</i>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <i class="fa fa-location-arrow" aria-hidden="true" style="color: #8dc63f">&nbsp; Củ Chi</i>
-              </div>
-            </div>
-          </li>
-        </ul>
       </div>
-    </div>
+      <div class="form-group">
+        <h5>Nội dung</h5>
+        <p id="helpId" class="text-muted">Hãy thêm các nhiệm vụ, mục tiêu, và yêu cầu của sự kiện. Để tình nguyện
+          viên có thể nắm bắt kĩ hơn về sự kiện.</p>
+      </div>
+      <div class="form-group">
+        <label for="tasks">Nhiệm vụ</label>
+        <textarea type="text" class="form-control" id="tasks"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="objective">Mục tiêu</label>
+        <textarea type="text" class="form-control" id="objective"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="requi">Yêu cầu</label>
+        <textarea type="text" class="form-control" id="requi"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="file">Đính kèm</label>
+        <input type="file" class="form-control-file" name="" id="file" accept="image/*" aria-describedby="fileHelpId">
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Tạo</button>
+      </div>
+    </form>
 
   </div>
-
 </div>
