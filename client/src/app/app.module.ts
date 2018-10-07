@@ -13,27 +13,31 @@ import { ChatComponent } from './components/chat/chat.component';
 import { CreateEventComponent } from './components/create-event/create-event.component';
 import { FriendlistComponent } from './components/friendlist/friendlist.component';
 import { NewfeedsComponent } from './components/newfeeds/newfeeds.component';
+import { EditBasicComponent } from './components/edit-basic/edit-basic.component';
+import { ChangePassComponent } from './components/change-pass/change-pass.component';
 
 const appRoutes : Routes = [
   {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
     path: '',
-    component: NewfeedsComponent
+    component: HomepageComponent,
+    children: [
+      { path: 'home', component: NewfeedsComponent },
+      { path: 'friend', component: FriendlistComponent },
+      { path: 'chat', component: ChatComponent },
+      { path: 'createEvent', component: CreateEventComponent }
+    ]
   },
   {
-    path: 'home',
-    component: NewfeedsComponent
-  },
-  {
-    path: 'friend',
-    component: FriendlistComponent
-  },
-  {
-    path: 'chat',
-    component: ChatComponent
-  },
-  {
-    path: 'createEvent',
-    component: CreateEventComponent
+    path: 'editprof',
+    component: EditprofComponent,
+    children: [
+      { path: 'basicInfo', component: EditBasicComponent },
+      { path: 'changePass', component: ChangePassComponent }
+    ]
   }
 ];
 
@@ -47,7 +51,9 @@ const appRoutes : Routes = [
     ChatComponent,
     CreateEventComponent,
     FriendlistComponent,
-    NewfeedsComponent
+    NewfeedsComponent,
+    EditBasicComponent,
+    ChangePassComponent
   ],
   imports: [
     BrowserModule,

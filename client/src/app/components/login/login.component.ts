@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoginService } from './../../services/login.service';
 import { User } from './../../models/user.class';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,7 @@ export class LoginComponent implements OnInit {
   public subscription: Subscription;
 
   public user: User[] = [];
-  constructor(public loginService: LoginService) { }
+  constructor(public loginService: LoginService, private router : Router) { }
 
   ngOnInit() {
   }
@@ -37,5 +38,9 @@ export class LoginComponent implements OnInit {
     }, error => {
       console.log(error);
     });
+  }
+
+  login(){
+    this.router.navigateByUrl('/home');
   }
 }

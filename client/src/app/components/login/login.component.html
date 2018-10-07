@@ -17,14 +17,12 @@
                 <tr>
                   <td><input type="email" class="inputtext" name="email" id="email" tabindex="1" data-testid="royal_email"></td>
                   <td><input type="password" class="inputtext" name="pass" id="pass" tabindex="2" data-testid="royal_pass"></td>
-                  <button class="btn-login">Đăng nhập</button>
+                  <button class="btn-login" (click)="login()" >Đăng nhập</button>
                 </tr>
                 <tr>
                   <td class="login_form_label_field"></td>
                   <td class="login_form_label_field">
-                    <div class="forget"><a href="https://www.facebook.com/recover/initiate?lwv=110&amp;ars=royal_blue_bar">Quên
-                        tài
-                        khoản?</a></div>
+                    <div class="forget"><a href="https://www.facebook.com/recover/initiate?lwv=110&amp;ars=royal_blue_bar">Quên tài khoản?</a></div>
                   </td>
                 </tr>
               </tbody>
