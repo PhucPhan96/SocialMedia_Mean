@@ -15,6 +15,7 @@ import { FriendlistComponent } from './components/friendlist/friendlist.componen
 import { NewfeedsComponent } from './components/newfeeds/newfeeds.component';
 import { EditBasicComponent } from './components/edit-basic/edit-basic.component';
 import { ChangePassComponent } from './components/change-pass/change-pass.component';
+import { EventsComponent } from './components/events/events.component';
 
 const appRoutes : Routes = [
   {
@@ -28,6 +29,7 @@ const appRoutes : Routes = [
       { path: 'home', component: NewfeedsComponent },
       { path: 'friend', component: FriendlistComponent },
       { path: 'chat', component: ChatComponent },
+      { path: 'events', component: EventsComponent },
       { path: 'createEvent', component: CreateEventComponent }
     ]
   },
@@ -53,7 +55,8 @@ const appRoutes : Routes = [
     FriendlistComponent,
     NewfeedsComponent,
     EditBasicComponent,
-    ChangePassComponent
+    ChangePassComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,

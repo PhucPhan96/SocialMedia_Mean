@@ -79,3 +79,9 @@
     padding: .75rem 0rem;
     cursor: pointer;
   }
+
+  .createEvent{
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #28a745;
+  }
