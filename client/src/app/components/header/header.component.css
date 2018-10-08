@@ -17,6 +17,7 @@
 
 .navbar-brand{
     margin-right: -10em;
+    cursor: pointer;
 }
 
 /* dropdown */
@@ -32,6 +33,7 @@
 
 .dropdown-menu li a{
     color: white;
+    cursor: pointer;
 }
 
 li.nav-item .option{

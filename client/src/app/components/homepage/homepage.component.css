@@ -27,10 +27,12 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    cursor: pointer;
   }
   
   .profile-card h5 a{
     font-size: 25px;
+    cursor: pointer;
   }
   
   .profile-card a{

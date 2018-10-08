@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-editprof',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditprofComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit() {
   }
 
+  editBasic(){
+    this.router.navigateByUrl("/editprof/basicInfo");
+  }
+
+  changePass(){
+    this.router.navigateByUrl("/editprof/changePass");
+  }
 }
