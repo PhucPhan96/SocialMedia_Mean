@@ -26,13 +26,18 @@
   }
   
   .post-content .post-container .post-detail{
-    margin-left: 65px;
+    margin-left: 40px;
+    margin-right: 40px;
     position: relative;
   }
   
   .post-content .post-container .post-detail .post-text{
     line-height: 24px;
-    margin: 0;
+    margin-top: 35px;
+  }
+
+  .post-content .post-container .post-detail .post-text h5{
+    font-weight: 600;
   }
   
   .post-content .post-container .post-detail .reaction{
@@ -84,4 +89,19 @@
     font-size: 1.2em;
     cursor: pointer;
     color: #28a745;
+  }
+
+  .timer row{
+    margin-bottom: 30px;
+  }
+
+  .timer i{
+    color: #28a745;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+
+  .timer span{
+    color: black;
+    font-weight: 600;
   }
