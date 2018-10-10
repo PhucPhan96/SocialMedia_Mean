@@ -16,6 +16,8 @@ import { NewfeedsComponent } from './components/newfeeds/newfeeds.component';
 import { EditBasicComponent } from './components/edit-basic/edit-basic.component';
 import { ChangePassComponent } from './components/change-pass/change-pass.component';
 import { EventsComponent } from './components/events/events.component';
+import { ListgroupComponent } from './components/listgroup/listgroup.component';
+import { GroupComponent } from './components/group/group.component';
 
 const appRoutes : Routes = [
   {
@@ -29,6 +31,7 @@ const appRoutes : Routes = [
       { path: 'home', component: NewfeedsComponent },
       { path: 'friend', component: FriendlistComponent },
       { path: 'chat', component: ChatComponent },
+      { path: 'group', component: ListgroupComponent },
       { path: 'events', component: EventsComponent },
       { path: 'createEvent', component: CreateEventComponent }
     ]
@@ -56,7 +59,9 @@ const appRoutes : Routes = [
     NewfeedsComponent,
     EditBasicComponent,
     ChangePassComponent,
-    EventsComponent
+    EventsComponent,
+    ListgroupComponent,
+    GroupComponent
   ],
   imports: [
     BrowserModule,

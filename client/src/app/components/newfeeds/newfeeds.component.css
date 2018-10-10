@@ -13,8 +13,9 @@
   }
   
   .post-content img.post-image{
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 250px;
   }
   
   .post-content .google-maps .map{

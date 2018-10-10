@@ -7,12 +7,8 @@
       <div class="card text-left">
         <div class="profile-card">
           <img src="./../../../assets/images/fuk.png" alt="user" class="profile-photo" (click)="editProf()">
-          <h5><a class="text-white" (click)="editProf()" >Phan Hồng Phúc</a></h5>
-          <!-- <a href="#" class="text-white"><i class="fa fa-rss" aria-hidden="true"></i> 1,299 followers</a> -->
+          <h5><a class="text-white" (click)="editProf()">Phan Hồng Phúc</a></h5>
           <ul class="nav justify-content-first">
-            <!-- <li class="nav-item">
-              <i class="fa fa-rss" aria-hidden="true">&nbsp;1,5k</i>
-            </li> -->
             <li class="nav-item">
               <i class="fa fa-user-plus" aria-hidden="true">&nbsp; 2,3k</i>
             </li>
@@ -55,7 +51,7 @@
                 </div>
 
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                  <a [routerLink]="['/chat']">Tổ chức</a>
+                  <a [routerLink]="['/group']">Tổ chức</a>
                 </div>
               </div>
             </li>
@@ -87,7 +83,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
       <router-outlet></router-outlet>
     </div>
