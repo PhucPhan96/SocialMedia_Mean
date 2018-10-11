@@ -18,6 +18,7 @@ import { ChangePassComponent } from './components/change-pass/change-pass.compon
 import { EventsComponent } from './components/events/events.component';
 import { ListgroupComponent } from './components/listgroup/listgroup.component';
 import { GroupComponent } from './components/group/group.component';
+import { GrNewfeedComponent } from './components/group/gr-newfeed/gr-newfeed.component';
 
 const appRoutes : Routes = [
   {
@@ -43,6 +44,13 @@ const appRoutes : Routes = [
       { path: 'basicInfo', component: EditBasicComponent },
       { path: 'changePass', component: ChangePassComponent }
     ]
+  },
+  {
+    path: 'groupdetail',
+    component: GroupComponent,
+    children: [
+      { path: 'newfeed', component: GrNewfeedComponent }
+    ]
   }
 ];
 
@@ -61,7 +69,8 @@ const appRoutes : Routes = [
     ChangePassComponent,
     EventsComponent,
     ListgroupComponent,
-    GroupComponent
+    GroupComponent,
+    GrNewfeedComponent
   ],
   imports: [
     BrowserModule,

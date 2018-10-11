@@ -1,3 +1,57 @@
-<p>
-  group works!
-</p>
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+      <div class="card text-left">
+        <div class="profile-card">
+          <h2>Chung Tay</h2>
+        </div>
+        <div class="card-body option-left">
+          <ul class="list-group">
+
+            <li class="list-group-item">
+              <a href="">Giới thiệu</a>
+            </li>
+            <li class="list-group-item">
+
+              <a [routerLink]="['/groupdetail/newfeed']">Tin tức</a>
+            </li>
+
+            <li class="list-group-item">
+              <a href="">Thành viên</a>
+            </li>
+
+            <li class="list-group-item">
+              <a href="">Sự kiện</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+      <div class="card text-left card-cover">
+        <img src="./../../../assets/images/banner.jpg" alt="">
+        <div class="control">
+
+          <button type="button" class="btn btn-success createevent pull-right"><i class="fa fa-plus">&nbsp; Tạo sự kiện</i></button>
+
+        </div>
+      </div>
+      <div class="row">
+        
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <router-outlet></router-outlet>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          </div>
+        
+      </div>
+      
+    </div>
+
+    
+
+  </div>
+</div>
