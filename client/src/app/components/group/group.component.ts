@@ -8,9 +8,12 @@ import { Router } from '@angular/router';
 })
 export class GroupComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit() {
   }
 
+  createEvent(){
+    this.router.navigateByUrl('/groupdetail/createEvent');
+  }
 }
