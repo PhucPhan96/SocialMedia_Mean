@@ -19,6 +19,9 @@ import { EventsComponent } from './components/events/events.component';
 import { ListgroupComponent } from './components/listgroup/listgroup.component';
 import { GroupComponent } from './components/group/group.component';
 import { GrNewfeedComponent } from './components/group/gr-newfeed/gr-newfeed.component';
+import { IntroGroupComponent } from './components/group/intro-group/intro-group.component';
+import { MemberComponent } from './components/group/member/member.component';
+import { CreateGroupComponent } from './components/create-group/create-group.component';
 
 const appRoutes : Routes = [
   {
@@ -50,7 +53,10 @@ const appRoutes : Routes = [
     component: GroupComponent,
     children: [
       { path: 'newfeed', component: GrNewfeedComponent },
-      { path: 'createEvent', component: CreateEventComponent }
+      { path: 'createEvent', component: CreateEventComponent },
+      { path: 'events', component: EventsComponent },
+      { path: 'intro', component: IntroGroupComponent },
+      { path: 'member', component: MemberComponent }
     ]
   }
 ];
@@ -71,7 +77,10 @@ const appRoutes : Routes = [
     EventsComponent,
     ListgroupComponent,
     GroupComponent,
-    GrNewfeedComponent
+    GrNewfeedComponent,
+    IntroGroupComponent,
+    MemberComponent,
+    CreateGroupComponent
   ],
   imports: [
     BrowserModule,
