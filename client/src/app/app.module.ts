@@ -20,8 +20,8 @@ import { ListgroupComponent } from './components/listgroup/listgroup.component';
 import { GroupComponent } from './components/group/group.component';
 import { GrNewfeedComponent } from './components/group/gr-newfeed/gr-newfeed.component';
 import { IntroGroupComponent } from './components/group/intro-group/intro-group.component';
-import { MemberComponent } from './components/group/member/member.component';
-import { CreateGroupComponent } from './components/create-group/create-group.component';
+import { CreateGroupComponent } from './components/group/create-group/create-group.component';
+import { MngroupComponent } from './components/group/mngroup/mngroup.component';
 
 const appRoutes : Routes = [
   {
@@ -37,7 +37,8 @@ const appRoutes : Routes = [
       { path: 'chat', component: ChatComponent },
       { path: 'group', component: ListgroupComponent },
       { path: 'events', component: EventsComponent },
-      { path: 'createEvent', component: CreateEventComponent }
+      { path: 'createEvent', component: CreateEventComponent },
+      { path: 'creategroup', component: CreateGroupComponent }
     ]
   },
   {
@@ -56,7 +57,8 @@ const appRoutes : Routes = [
       { path: 'createEvent', component: CreateEventComponent },
       { path: 'events', component: EventsComponent },
       { path: 'intro', component: IntroGroupComponent },
-      { path: 'member', component: MemberComponent }
+      { path: 'mngroup', component: MngroupComponent },
+      { path: 'creategroup', component: CreateGroupComponent }
     ]
   }
 ];
@@ -79,8 +81,8 @@ const appRoutes : Routes = [
     GroupComponent,
     GrNewfeedComponent,
     IntroGroupComponent,
-    MemberComponent,
-    CreateGroupComponent
+    CreateGroupComponent,
+    MngroupComponent
   ],
   imports: [
     BrowserModule,

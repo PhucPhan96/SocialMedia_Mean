@@ -17,4 +17,7 @@ export class ListgroupComponent implements OnInit {
     this.router.navigateByUrl('/groupdetail/newfeed');
   }
 
+  createGroup(){
+    this.router.navigateByUrl('/creategroup');
+  }
 }
