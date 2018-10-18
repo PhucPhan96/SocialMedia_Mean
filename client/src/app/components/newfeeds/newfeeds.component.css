@@ -99,3 +99,15 @@
   hr{
     border-top: 2px solid rgba(0,0,0,.1) !important;
   }
+
+  .control {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .control i{
+    color: rgb(139, 139, 139);
+    margin-bottom: 0;
+  }

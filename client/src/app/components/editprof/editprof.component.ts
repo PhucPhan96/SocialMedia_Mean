@@ -14,10 +14,14 @@ export class EditprofComponent implements OnInit {
   }
 
   editBasic(){
-    this.router.navigateByUrl("/editprof/basicInfo");
+    this.router.navigateByUrl("/editprof/changeBasicInfo");
   }
 
   changePass(){
     this.router.navigateByUrl("/editprof/changePass");
+  }
+
+  profile(){
+    this.router.navigateByUrl("/editprof/basicInfo");
   }
 }

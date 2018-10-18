@@ -7,7 +7,7 @@
       <div class="timeline-nav-bar hidden-sm hidden-xs">
         <div class="row">
           <div class="col-md-3">
-            <div class="profile-info">
+            <div class="profile-info" (click)="profile()" >
               <img src="./../../../assets/images/fuk.png" alt="" class="img-responsive profile-photo">
               <h3>Phan Hồng Phúc</h3>
               <p class="text-muted">Front-end Dev</p>
@@ -25,7 +25,7 @@
 
           <!--Edit Profile Menu-->
           <ul class="edit-menu">
-            <li><i class="icon ion-ios-information-outline"></i><a (click)="editBasic()" >Thông tin cơ bản</a></li>
+            <li><i class="icon ion-ios-information-outline"></i><a (click)="editBasic()" >Chỉnh sửa thông tin cơ bản</a></li>
             <!-- <li><i class="icon ion-ios-briefcase-outline"></i><a href="edit-profile-work-edu.html">Education and Work</a></li>
             <li><i class="icon ion-ios-heart-outline"></i><a href="edit-profile-interests.html">My Interests</a></li>
             <li><i class="icon ion-ios-settings"></i><a href="edit-profile-settings.html">Account Settings</a></li> -->

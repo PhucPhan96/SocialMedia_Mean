@@ -22,6 +22,7 @@ import { GrNewfeedComponent } from './components/group/gr-newfeed/gr-newfeed.com
 import { IntroGroupComponent } from './components/group/intro-group/intro-group.component';
 import { CreateGroupComponent } from './components/group/create-group/create-group.component';
 import { MngroupComponent } from './components/group/mngroup/mngroup.component';
+import { BasicInfoComponent } from './components/basic-info/basic-info.component';
 
 const appRoutes : Routes = [
   {
@@ -45,7 +46,8 @@ const appRoutes : Routes = [
     path: 'editprof',
     component: EditprofComponent,
     children: [
-      { path: 'basicInfo', component: EditBasicComponent },
+      { path: 'basicInfo', component: BasicInfoComponent },
+      { path: 'changeBasicInfo', component: EditBasicComponent },
       { path: 'changePass', component: ChangePassComponent }
     ]
   },
@@ -82,7 +84,8 @@ const appRoutes : Routes = [
     GrNewfeedComponent,
     IntroGroupComponent,
     CreateGroupComponent,
-    MngroupComponent
+    MngroupComponent,
+    BasicInfoComponent
   ],
   imports: [
     BrowserModule,

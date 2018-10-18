@@ -121,4 +121,17 @@
     font-size: 1.5rem;
     padding-right: 20px;
     color: #7c7c7c;
+    cursor: pointer;
+  }
+
+  .control {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .control i{
+    color: rgb(139, 139, 139);
+    margin-bottom: 0;
   }
