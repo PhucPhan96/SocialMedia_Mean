@@ -55,7 +55,7 @@ const appRoutes : Routes = [
     path: 'groupdetail',
     component: GroupComponent,
     children: [
-      { path: 'newfeed', component: GrNewfeedComponent },
+      // { path: 'newfeed', component: GrNewfeedComponent },
       { path: 'createEvent', component: CreateEventComponent },
       { path: 'events', component: EventsComponent },
       { path: 'intro', component: IntroGroupComponent },
