@@ -10,8 +10,22 @@ var groupSchema = new schema({
     contact : String,
     avatarpath : String,
     coverpath : String,
-    admin : {type : objectId, ref : 'user'},
-    members : {type : [member.schema]}
+    admin : {type : objectId, ref : 'user', required: false}
 });
 
-module.exports = mongoose.model('group', groupSchema);
+// var group = mongoose.model('group', groupSchema);
+//  module.exports = group;
+//  group.create({
+//     name : 'ddd',
+//     intro : 'ddd',
+//     location_active : 'ddd',
+//     contact : 'ddd',
+//     avatarpath : 'ddd',
+//     coverpath : 'ddd',
+//     admin : '5bd2db8205aa0e1b74ad46f1',
+//     members : []
+// }).then(()=>{
+//     console.log('craete');
+// }).catch((err)=>{
+//     console.log('craete ' + err);
+// });

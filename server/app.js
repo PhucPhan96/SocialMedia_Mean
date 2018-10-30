@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var db = require('./db');
 var router = require('./src/controllers/userController');
 var user = require('./src/models/user');
+var groupModel = require('./src/models/group');
 
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");

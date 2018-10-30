@@ -11,7 +11,6 @@ var eventSchema = new schema({
     event_end : Date,
     event_address : String,
     totalcost : Number,
-    apply : {type : objectId, ref : 'user'},
     user_create : {type : objectId, ref : 'user'},
     group : {type : objectId, ref : 'group'}
 });
