@@ -13,17 +13,17 @@ var groupSchema = new schema({
     admin : {type : objectId, ref : 'user', required: false}
 });
 
+module.exports = mongoose.model('group', groupSchema);
 // var group = mongoose.model('group', groupSchema);
 //  module.exports = group;
 //  group.create({
-//     name : 'ddd',
-//     intro : 'ddd',
-//     location_active : 'ddd',
-//     contact : 'ddd',
-//     avatarpath : 'ddd',
-//     coverpath : 'ddd',
-//     admin : '5bd2db8205aa0e1b74ad46f1',
-//     members : []
+//     name : 'Volunteer',
+//     intro : 'ahihi đồ ngốc',
+//     location_active : '30 Điện Biên Phủ',
+//     contact : '0912345456',
+//     avatarpath : 'C:/img/avatar',
+//     coverpath : 'C:/img/cover',
+//     admin : '5bd981322984781604d2f94f'
 // }).then(()=>{
 //     console.log('craete');
 // }).catch((err)=>{
