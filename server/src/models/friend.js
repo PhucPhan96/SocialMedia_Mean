@@ -9,3 +9,14 @@ var friendSchema = new schema({
 });
 
 module.exports = mongoose.model('friend', friendSchema);
+// var friend = mongoose.model('friend', friendSchema);
+//  module.exports = friend;
+//  friend.create({
+//     'user_one' : '5bd9b51266eece3bdc942825',
+//     'user_two' : '5bd9af0de0eb103174dd61c9',
+//     'status' : 'friend'
+// }).then(()=>{
+//     console.log('craete');
+// }).catch((err)=>{
+//     console.log('craete ' + err);
+// });

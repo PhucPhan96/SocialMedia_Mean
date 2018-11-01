@@ -1,27 +1,24 @@
-var express = require('express');
-var router = express.Router();
-var user = require('../models/user');
+'use strict';
+const mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
+const Users = require('../models/user.js');
+const jwt = require('jsonwebtoken');
 
-router.get('/getAllUser', function (req, res) {
-    user.getAllUser(function (err, result) {
-        if (err) {
-            res.send("Error!");
-        }
-        else {
-            res.json(result);
-        }
-    })
-});
-
-router.get('/getUserByUsername/:username', function (req, res) {
-    user.find({ 'username': req.params.username }, function (err, result) {
-        if (err) {
-            res.send("Error!");
-        }
-        else {
-            res.json(result);
-        }
-    });
-});
-
-module.exports = router;
+var users = {
+    getAllUser: (req, res) => {
+        Users.find({})
+            .then((data) => { res.json({data})} )
+            .catch((err) => { res.json({ result: 0, msg: 'Server error', data: {} }); console.log(err); })
+    },
+    login:(req, res) =>{
+        Users.findOne({'username' : req.params.username}, function(err, result){
+            if (err) {
+                res.send("Error!");
+            }
+            else {
+                res.json(result);
+            }
+        });
+    }
+};
+module.exports = users;

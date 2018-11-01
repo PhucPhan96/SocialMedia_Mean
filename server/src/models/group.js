@@ -23,7 +23,7 @@ module.exports = mongoose.model('group', groupSchema);
 //     contact : '0912345456',
 //     avatarpath : 'C:/img/avatar',
 //     coverpath : 'C:/img/cover',
-//     admin : '5bd981322984781604d2f94f'
+//     admin : '5bd9af0de0eb103174dd61c9'
 // }).then(()=>{
 //     console.log('craete');
 // }).catch((err)=>{

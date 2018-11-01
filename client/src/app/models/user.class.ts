@@ -1,15 +1,32 @@
-export class User{
-    public id : String;
-    public username : String;
-    public password : String;
-    public email : String;
-    public age : Number;
+export class User {
+    id: String;
+    firstname: String;
+    lastname: String;
+    username: String;
+    password: String;
+    email: String;
+    address: String;
+    gender: String;
+    birthday: Date;
+    about: String;
+    phone: String;
+    job: String;
+    avatarpath: String;
+    coverpath: String
 
-    constructor(id : string, username : string, password : string, email : string, age : number){
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.email = email;
-        this.age = age;
+    constructor() {
+        this.id = "";
+        this.firstname = "";
+        this.lastname = "";
+        this.username = "";
+        this.password = "";
+        this.email = "";
+        this.address = "";
+        this.gender = "";
+        this.about = "";
+        this.phone = "";
+        this.job = "";
+        this.avatarpath = "";
+        this.coverpath = ""
     }
 }

@@ -7,3 +7,12 @@ var planSchema = new schema({
 });
 
 module.exports = mongoose.model('plan', planSchema);
+// var plan = mongoose.model('plan', planSchema);
+//  module.exports = plan;
+//  plan.create({
+//     'event' : '5bd9b0b4b6354f1324dc5219',
+// }).then(()=>{
+//     console.log('craete');
+// }).catch((err)=>{
+//     console.log('craete ' + err);
+// });

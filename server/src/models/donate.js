@@ -10,3 +10,15 @@ var donateSchema = new schema({
 });
 
 module.exports = mongoose.model('donate', donateSchema);
+// var donate = mongoose.model('donate', donateSchema);
+//  module.exports = donate;
+//  donate.create({
+//     'item' : 'monney',
+//     'quality' : 3000000,
+//     'user' : '5bd9af0de0eb103174dd61c9',
+//     'event' : '5bd9b0b4b6354f1324dc5219',
+// }).then(()=>{
+//     console.log('craete');
+// }).catch((err)=>{
+//     console.log('craete ' + err);
+// });

@@ -9,16 +9,16 @@ import { User } from './../models/user.class';
 })
 export class LoginService {
   // public username : Object;
-  public User : User;
-  public API : string = 'http://localhost:3200/';
+  public User: User;
+  public API: string = 'http://localhost:3200/';
 
-  constructor(public http : HttpClient) { }
+  constructor(public http: HttpClient) { }
 
-  getAllUser() : Observable<User[]>{
-    return this.http.get<User[]>(this.API + 'getAllUser');
+  getAllUser(): Observable<User[]> {
+    return this.http.get<User[]>(this.API + 'getAllUsers/');
   }
 
-  getUserByUsername(username : string) : Observable<User[]>{
-    return this.http.get<User[]>(this.API + 'getUserByUsername/' + username);
-}
+  login(username: string): Observable<User[]> {
+    return this.http.get<User[]>(this.API + 'login/' + username);
+  }
 }

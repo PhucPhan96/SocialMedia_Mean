@@ -11,13 +11,13 @@
             <table cellspacing="0" role="presentation">
               <tbody>
                 <tr>
-                  <td><label class="email" for="email">Email</label></td>
+                  <td><label class="email" for="username">Tài Khoản</label></td>
                   <td><label class="password" for="pass">Mật khẩu</label></td>
                 </tr>
                 <tr>
-                  <td><input type="email" class="inputtext" name="email" id="email" tabindex="1" data-testid="royal_email"></td>
-                  <td><input type="password" class="inputtext" name="pass" id="pass" tabindex="2" data-testid="royal_pass"></td>
-                  <button class="btn-login" (click)="login()" >Đăng nhập</button>
+                  <td><input type="text" class="inputtext" name="username" tabindex="1" data-testid="royal_email" [(ngModel)]="username"></td>
+                  <td><input type="password" class="inputtext" name="pass" tabindex="2" data-testid="royal_pass" [(ngModel)]="password"></td>
+                  <button class="btn-login" (click)="checkLogin()" >Đăng nhập</button>
                 </tr>
                 <tr>
                   <td class="login_form_label_field"></td>

@@ -14,19 +14,18 @@ var userSchemas = new schema({
     phone : String,
     job : String,
     avatarpath : String,
-    coverpath : String,
-    // group : {type : objectId, ref : 'group'} 
+    coverpath : String
 });
 
 module.exports = mongoose.model('user', userSchemas);
 // var user = mongoose.model('user', userSchemas);
 //  module.exports = user;
 //  user.create({
-//         'firstname': 'Phan',
-//         'lastname': 'Phuc',
-//         'username': 'phucphan',
+//         'firstname': 'Thinh',
+//         'lastname': 'Luu',
+//         'username': 'thinhluu',
 //         'password': '123456',
-//         'email': 'phucphan@gmail.com',
+//         'email': 'thinhluu@gmail.com',
 //         'address': '1234 Quang Trung, Go Va',
 //         'gender': 'Nam',
 //         'birthday': '1996/7/1',

@@ -13,7 +13,6 @@ export class LoginComponent implements OnInit {
 
   public username: string = "";
   public password: string = "";
-  public status : string = "";
   public subscription: Subscription;
 
   public user: User[] = [];
@@ -23,17 +22,16 @@ export class LoginComponent implements OnInit {
   }
 
   checkLogin() {
-    this.subscription = this.loginService.getUserByUsername(this.username).subscribe(data => {
+    console.log(this.username + this.password);
+    this.subscription = this.loginService.login(this.username).subscribe(data => {
       this.user = data;
-      if (this.user[0].password == this.password) {
-        // this.success = true;
-        this.status = "Xin Chào! Bạn đã đăng nhập thành công.";
+      if (JSON.parse(JSON.stringify(this.user)).password == this.password) {
         console.log("Đăng nhập thành công!");
+        this.router.navigateByUrl('/home');
       }
       else {
-        // this.success = false;
-        this.status = "Đăng nhập thất bại. Vui lòng thử lại!";
         console.log("Đăng nhập thất bại!");
+        this.password = "";
       }
     }, error => {
       console.log(error);

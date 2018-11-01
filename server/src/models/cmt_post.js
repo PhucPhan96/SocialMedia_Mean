@@ -9,3 +9,14 @@ var cmtPostSchema = new schema({
 });
 
 module.exports = mongoose.model('cmt_post', cmtPostSchema);
+// var cmt_post = mongoose.model('cmt_post', cmtPostSchema);
+//  module.exports = cmt_post;
+//  cmt_post.create({
+//     'user' : '5bd9af0de0eb103174dd61c9',
+//     'event' : '5bd9b0b4b6354f1324dc5219',
+//     'comment' : 'Quá tuyệt vời!'
+// }).then(()=>{
+//     console.log('craete');
+// }).catch((err)=>{
+//     console.log('craete ' + err);
+// });
